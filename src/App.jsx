@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
 import Events from './scenes/Events';
-import mockData from './mock/events.json';
 
 import './App.css';
 
@@ -15,7 +14,7 @@ class App extends Component {
           <h2 className="text-center">What's Next</h2>
         </div>
         <div className="App__content">
-          <Events events={mockData.events} />
+          <Events />
         </div>
       </div>
     );
