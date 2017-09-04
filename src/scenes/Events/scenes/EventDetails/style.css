@@ -1,0 +1,8 @@
+.event__detail {
+  padding-left: 20%;
+  padding-right: 20%;
+  display: -webkit-flex;
+  -webkit-justify-content: space-around; 
+  display: flex;
+  justify-content: space-between;
+}

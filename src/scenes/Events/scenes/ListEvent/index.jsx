@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Event from './../../components/Event';
 
-const ListEvent = ({ events }) => {
+const ListEvent = ({ events, removeEvent, showDetails }) => {
   return (
     <div className="row">
       {
@@ -11,7 +11,8 @@ const ListEvent = ({ events }) => {
           <Event 
             key={event.id} 
             event={event}
-            removeEvent={this.removeEvent}  
+            removeEvent={removeEvent}  
+            showDetails= {showDetails}
           />
         )
       }
@@ -19,8 +20,9 @@ const ListEvent = ({ events }) => {
   );
 };
 
-Event.propTypes = {
+ListEvent.propTypes = {
   events: PropTypes.array.isRequired,
+  showDetails: PropTypes.func.isRequired,
 };
 
 
